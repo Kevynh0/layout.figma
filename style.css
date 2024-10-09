@@ -7,26 +7,57 @@ a{
     color: inherit;
     text-decoration: none;
 }
+:root{
+    --primary-color: #0442BF;
+    --secundary-color: #003DB9;
+}
 body{
     height: 100vh;
     display: flex;
     flex-direction: column;
     padding-inline: 64px;
-    background-color: #0442BF;
+    background-color: var(--secundary-color);
 }
 header{
-    background-color: tomato;
+    /*background-color: tomato;*/
     height: 100px;
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+.logo{
+    height: 100%;
+    display: flex;
 }
 .menu{
     gap: 50px;
     display: flex;
     align-items: center;
     padding-right: 28%;
+    font-size: 175%;
+    color: white;
+    
+}
+.menu2{
+    color: white;
 }
 main{
     padding: 10vh;
+    font-size: 27px;
+}
+.title{
+    color: white;
+    font-size: 20vh;
+    align-items: center;
+    padding-left: 30vh;
+    background-color: var(--secundary-color);
+}
+.hash{
+    color:lawngreen;
+    font-family: "Protest Strike", sans-serif;
+    font-size: 20vh;
+    border-radius: 50%;
+    position: absolute;
+    top: 13%;
+    right: 72%;
 }
